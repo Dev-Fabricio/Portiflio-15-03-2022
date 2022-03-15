@@ -1,0 +1,235 @@
+/* GERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, input {
+    font-family: 'Quicksand', sans-serif;
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e0eafc, #cfdef3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+    overflow: hidden;
+}
+#top {
+    position: absolute;
+    width: 100%;
+    height: 4.5%;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+#top p {
+    margin-top: 4px;
+    font-size: 120%;
+    font-weight: lighter;
+}
+#container-g {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+#left {
+    position: absolute;
+    width: 40%;
+    height: 95%;
+    top: 0;
+    left: 0;
+    background: rgb(247, 247, 247);
+    margin-top: 4.5vh;
+}
+#right {
+    position: absolute;
+    width: 55%;
+    height: 95%;
+    top: 0;
+    left: 44%;
+    margin-top: 4.5vh;
+}
+ul {
+    list-style: none;
+}
+
+/*  Parte: ***LEFT***  */
+#circle {
+    background-color: #F55555;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    top: 40%;
+    left: -90%;
+    transition-duration: 2s;
+}
+#circle:hover {
+    background-color: #F55555;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    top: 40%;
+    left: -90%;
+    transform: scale(0.5);
+    transition-duration: 2s;
+}
+
+
+
+
+.text-a {
+    padding: 3px 3px 3px 25px;
+    width: 65%;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 29.5%;
+}
+#icon-left {
+    position: absolute;
+    width: 160px;
+    height: 55px;
+    top: 26%;
+    left: 50%;
+
+}
+#icon-left ul li{
+    display: inline-block;
+    margin: 4px;
+    padding: 5px;
+}
+#icon-left ul li:hover{
+    display: inline-block;
+    margin: 4px;
+    padding: 5px;
+    border-bottom: 1px solid #F55555;
+}
+
+
+#img-a {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 50%;
+    height: 50%;
+}
+#img-a img {
+    width: 100%;
+    height: 100%;
+}
+
+/*  Parte: ***RIGHT***  */
+#titulo {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 12%;
+}
+#btn {
+    position: absolute;
+    text-transform: uppercase;
+    background: #e0eafc;
+    width: 145px;
+    color: rgb(0, 0, 0);
+    height: 63px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    transition: 1s;
+}
+#btn:hover {
+    position: absolute;
+    text-transform: uppercase;
+    color: #3F3D56;
+    width: 145px;
+    height: 63px;
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    transition: 2s;
+}
+
+/*  Conteudo: Right  */
+#projects {
+    
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background: #e0eafc;
+    border-radius: 15px;
+}
+#apr-p {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    font-size: 70%;
+}
+#apr-p li{
+    position: absolute;
+    width: 45%;
+    height: 99.5%;
+    background-color: #3F3D56;
+    z-index: 0;
+}
+#apr {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    font-size: 70%;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+#apr li{
+    position: absolute;
+    width: 45%;
+    height: 99.5%;
+    background-color: #3F3D56;
+    z-index: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}
+
+#dois {
+    left: 54.5%;
+
+}
+
+/* IMG e TXT // CONTEUDO */
+#apr li img {
+    margin: -10% 10% 10% 10%;
+    width:80%;
+    height: 80%;
+}
+p.textop {
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    color: white;
+    text-align: justify;
+}
